@@ -1,5 +1,6 @@
 {
   "name": "habits",
+  "homepage": "https://tpagram.github.io/habits/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,9 +1,9 @@
 import React from 'react';
-import Habit from 'components/habit'
+import Habit from './habit'
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import TextField from 'material-ui/TextField';
-import 'styles/App.css';
+import '../styles/App.css';
 
 class HabitList extends React.Component {
 

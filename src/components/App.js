@@ -1,7 +1,7 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import HabitList from 'components/habit_list'
-import 'styles/App.css';
+import HabitList from './habit_list'
+import '../styles/App.css';
 
 class App extends React.Component {
   render() {

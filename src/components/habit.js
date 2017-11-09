@@ -1,11 +1,11 @@
 import React from 'react';
-import Day from 'components/day'
+import Day from './day'
 import moment from 'moment'
 import PropTypes from 'prop-types'
 
 import Langle from 'react-icons/lib/fa/chevron-left'
 import Rangle from 'react-icons/lib/fa/chevron-right'
-import 'styles/App.css';
+import '../styles/App.css';
 
 const visibleDays = 7
 

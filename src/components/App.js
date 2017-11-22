@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <MuiThemeProvider>
-          <header className="App-header">
+          <header className="header">
             <h1 className="App-title">Habits!</h1>
           </header>
           <HabitList/>

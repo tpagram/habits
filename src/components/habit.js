@@ -70,7 +70,9 @@ class Habit extends React.Component {
       <div className="habit">
         <div className="habit-name">{this.props.name}</div>
         <Langle className="day-button left" onClick={this.handleLeft}/>
-        {this.renderDays()}
+        <div className="day-list">
+          {this.renderDays()}
+        </div>
         <Rangle className="day-button right" onClick={this.handleRight}/>
       </div>
     );

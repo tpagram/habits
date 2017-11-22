@@ -3,7 +3,19 @@ import Habit from './habit'
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import TextField from 'material-ui/TextField';
+import {TransitionGroup} from 'react-transition-group'
+import FadeRight from '../animations/fadeRight.js'
 import '../styles/App.css';
+
+// const FadeRight = ({ children, ...props }) => (
+//   <CSSTransition
+//     {...props}
+//     timeout={1000}
+//     classNames="fade-right"
+//   >
+//     {children}
+//   </CSSTransition>
+// );
 
 class HabitList extends React.Component {
 
@@ -21,13 +33,15 @@ class HabitList extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="habit-list">
+      [
+        <TransitionGroup className="habit-list" key="habit-list">
           {this.state.habits.map((name,i) =>
-            <Habit key={i} name={name}/>
+            <FadeRight key={name}>
+              <Habit key={i} name={name}/>
+            </FadeRight>
           )}
-        </div>
-        <div className="footer">
+        </TransitionGroup>,
+        <div className="footer" key="footer">
           <form className = "add-habit" onSubmit={this.addHabit}>
             <TextField
               hintText="New habit"
@@ -40,7 +54,7 @@ class HabitList extends React.Component {
             </FloatingActionButton>
           </form>
         </div>
-      </div>
+      ]
     );
   }
   handleNameChange(e) {

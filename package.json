@@ -9,7 +9,8 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-icons": "^2.2.7",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "react-transition-group": "^2.2.1"
   },
   "scripts": {
     "start": "NODE_PATH=src react-scripts start",
